@@ -5,7 +5,11 @@
 		"ServerScriptService": {
 			"$className": "ServerScriptService",
 			"$ignoreUnknownInstances": true,
-			"$path": "src"
+			"Core": {
+				"$className": "Core",
+				"$ignoreUnknownInstances": true,
+				"$path": "src"
+			}
 		}
 	}
 }
