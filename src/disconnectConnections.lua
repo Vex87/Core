@@ -1,7 +1,9 @@
-return function(connections)
-	for _,con in pairs(connections) do
-		if con then
-			con:Disconnect()
+return function(Parent, Class)
+	local Tbl = {}
+	for _,v in pairs(Parent:GetChildren()) do
+		if v:IsA(Class) then
+			table.insert(Tbl, v)
 		end
 	end
+	return Tbl
 end
